@@ -13,4 +13,4 @@ more specific pointers.
 
 Set the fields which say ______ here in `preliminaries.tex`. Complie `thesis.tex`.
 
-Jun's advancement guide is included in `TalkAboutAdvancement.pdf`'
+Jun's advancement guide is included in `TalkAboutAdvancement.pdf`
