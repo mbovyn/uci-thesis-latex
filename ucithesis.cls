@@ -46,6 +46,8 @@
 \newcommand{\acknowledgments}[1]{\newcommand\Acknowledgments{#1}}
 \newcommand{\curriculumvitae}[1]{\newcommand\Curriculumvitae{#1}}
 \newcommand{\thesisabstract}[1]{\newcommand\Thesisabstract{#1}}
+\newcommand{\executivesummary}[1]{\newcommand\Executivesummary{#1}}
+\newcommand{\timelineofcompletion}[1]{\newcommand\Timelineofcompletion{#1}}
 
 \newcommand{\thesistitlepage}
 {
@@ -58,10 +60,10 @@
 		\vspace{0.4in}
 		\Thesistitle \\
 		\vspace{0.15in}
-		DISSERTATION \\
+		ADVANCEMENT DOCUMENT \\
 		\vspace{0.4in}
 		submitted in partial satisfaction of the requirements \\
-		for the degree of \\
+		to advance to candidacy for the degree of \\
 		\vspace{0.4in}
 		\MakeUppercase\Degreename \\
 		\vspace{0.15in}
@@ -166,7 +168,7 @@
 \newcommand{\abstractpage}
 {
 	\begin{center}
-		{\bf\Large ABSTRACT OF THE DISSERTATION} \\
+		{\bf\Large ABSTRACT OF THE  ADVANCEMENT DOCUMENT} \\
 		\vspace{0.2in}
 		\Thesistitle \\
 		\vspace{0.2in}
@@ -174,7 +176,7 @@
 		\vspace{0.2in}
 		\Authorname \\
 		\vspace{0.2in}
-		\Degreename\ in \Degreefield \\
+		Advancement to Candidacy for the Degree of \Degreename\ in \Degreefield \\
 		\vspace{0.2in}
 		University of California, Irvine, \Degreeyear \\
 		\vspace{0.2in}
@@ -183,6 +185,26 @@
 	\vspace{0.2in}
 	\doublespacing
 	\Thesisabstract
+	\clearpage
+}
+
+\newcommand{\executivesummarypage}
+{
+	\begin{center}
+		\textbf{\Large EXECUTIVE SUMMARY} \\
+		\vspace{0.4in}
+	\end{center}
+	\Executivesummary
+	\clearpage
+}
+
+\newcommand{\timelineofcompletionpage}
+{
+	\begin{center}
+		\textbf{\Large TIMELINE OF COMPLETION} \\
+		\vspace{0.4in}
+	\end{center}
+	\Timelineofcompletion
 	\clearpage
 }
 
@@ -205,11 +227,11 @@
 	\thesistitlepage
 	\clearpage
 	\pagenumbering{roman}
-        \ifx\Prepublishedcopyrightdeclaration\undefined
-	  \copyrightpage
-	\else
-	  \prepublishedcopyrightpage
-        \fi
+%        \ifx\Prepublishedcopyrightdeclaration\undefined
+%	  \copyrightpage
+%	\else
+%	  \prepublishedcopyrightpage
+%        \fi
 	\setcounter{page}{2}
 	%\signaturepage  %% not for electronic submission
         \ifx\Dedications\undefined
@@ -238,12 +260,20 @@
 	\acknowledgmentspage
 	\clearpage
 	\phantomsection
-	\addcontentsline{toc}{chapter}{CURRICULUM VITAE}
-	\curriculumvitaepage
+	%\addcontentsline{toc}{chapter}{CURRICULUM VITAE}
+	%\curriculumvitaepage
+	%\clearpage
+	%\phantomsection
+	\addcontentsline{toc}{chapter}{ABSTRACT OF THE ADVANCEMENT DOCUMENT}
+	\abstractpage
 	\clearpage
 	\phantomsection
-	\addcontentsline{toc}{chapter}{ABSTRACT OF THE DISSERTATION}
-	\abstractpage
+	\addcontentsline{toc}{chapter}{EXECUTIVE SUMMARY}
+	\executivesummarypage
+	\clearpage
+	\phantomsection
+	\addcontentsline{toc}{chapter}{TIMELINE OF COMPLETION}
+	\timelineofcompletionpage
 	\clearpage
 	\setcounter{page}{1}
 	\pagenumbering{arabic}
