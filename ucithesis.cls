@@ -108,31 +108,6 @@
 	\clearpage
 }
 
-\newcommand{\signaturepage}
-{
-	\vspace*{1in}
-	\begin{center}
-		The dissertation of \Authorname \\
-		is approved and is acceptable in quality and form for \\
-		publication on microfilm and in digital formats: \\
-	\end{center}
-	\vspace{3in}
-	\begin{flushright}
-	\rule{3in}{0.01in} \\
-	\vspace{0.4in}
-	\rule{3in}{0.01in} \\
-	\vspace{0.4in}
-	\rule{3in}{0.01in} \\
-	Committee Chair
-	\end{flushright}
-	\vspace{.75in}
-	\begin{center}
-	University of California, Irvine \\
-	\Degreeyear
-	\end{center}
-	\clearpage
-}
-
 \newcommand{\dedicationpage}
 {
 	\begin{center}
