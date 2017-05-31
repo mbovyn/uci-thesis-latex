@@ -75,7 +75,7 @@
 	\end{center}
 	\vspace{1in}
 	\begin{flushright}
-		Dissertation Committee: \\
+		Advancement Committee: \\
 		\Committeechair, Chair \\
 		\Othercommitteemembers \\
 	\end{flushright}
