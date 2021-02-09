@@ -18,6 +18,7 @@
 \usepackage{graphicx}
 \usepackage{natbib}
 \usepackage{relsize}
+\usepackage[titletoc]{appendix}
 
 % Some other useful packages
 \usepackage{caption}
@@ -25,18 +26,26 @@
 \usepackage{multirow}
 \usepackage{tabularx}
 
+% Uncomment the following to attempt to enforce Type 1 or TrueType 
+% fonts. ProQuest does not want the type 3 fonts used by default as
+% of Dec. 2019 - see 
+% https://support.proquest.com/articledetail?id=kA01W000000k9o2SAA . 
+% If you are unable to embed fonts such as 'Zapf Dingbats' or 
+% 'Symbol', try using raster images (.jpg or .png) instead of vector 
+%images (.pdf or .eps).
+% \usepackage[T1]{fontenc} 
+
 % plainpages=false fixes the "duplicate ignored" error with page counters
 % Set pdfborder to 0 0 0 to disable colored borders around PDF hyperlinks
 \usepackage[plainpages=false,pdfborder={0 0 0}]{hyperref}
 
-% Uncomment the following two lines to use the algorithm package,
+% Uncomment the following line to use the algorithm package,
 % which provides an algorithm environment similar to figure and table
 % ("\begin{algorithm}...\end{algorithm}"). A list of algorithms will
 % automatically be added in the preliminary pages. Note that you
 % probably want a package for the actual code to go with this (e.g.,
 % algorithmic).
 %\usepackage{algorithm}
-%\renewcommand{\listalgorithmname}{\protect\centering\protect\Large LIST OF ALGORITHMS}
 
 % Uncomment the following line to enable Unicode support. This will allow you
 % to enter non-ASCII characters (such as accented characters) directly without
@@ -106,6 +115,8 @@
 \captionsetup[table]{list=no}
 
 % If you have an appendix, it should come after the references.
+\begin{appendices}
 \include{appendix}
+\end{appendices}
 
 \end{document}
